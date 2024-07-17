@@ -9,22 +9,41 @@ import Footer from "../components/Footer.astro";
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="coffee">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/x-icon" href="../favicon.ico" />
     <meta name="generator" content={Astro.generator} />
+    
     <ViewTransitions  />
     <title>{title}</title>
     <title>
       Exam Countdown/Timer for Exams like JEE, NEET, BITSAT 2023/2024/2025
     </title>
+    <script is:inline>
+      // ☝️ This script prevent the FART effect.
+      if (localStorage.getItem("theme") === null) {
+        document.documentElement.setAttribute("data-theme", "light");
+      } else
+        document.documentElement.setAttribute(
+          "data-theme",
+          localStorage.getItem("theme")
+        );
+      // "theme" LocalStorage value is set by the package to remember user preference.
+      // The value is checked and applyed before rendering anything.
+    </script>
+    <script>
+      import { themeChange } from 'theme-change';
+      themeChange();
+      // 👆 you could import the CDN directly instead of these two lines
+    </script>
   </head>
-  <body>
+  <body class="bg-base-200">
     <Head />
     <slot />
     <Footer />
+    <script src="https://cdn.jsdelivr.net/npm/theme-change@2.0.2/index.js"></script>
   </body>
 </html>
 <style is:global>

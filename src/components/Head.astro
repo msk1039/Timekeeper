@@ -10,6 +10,7 @@
 <meta name="generator" content={Astro.generator} />
 <meta property="og:image" content="/1-min.webp" />
 <link rel="manifest" href="/manifest.webmanifest" />
+<!-- <link rel="stylesheet" href="../theme1.css" />   -->
 
 <link rel="icon" type="image/x-icon" href="../favicon.ico" />
 <div class="navbar bg-base-100 z-40">
@@ -21,6 +22,35 @@
   </div>
   <div class="flex-none">
     <ul class="menu menu-horizontal px-1">
+      <li>
+        <a>
+          Themes
+          <svg
+            class="fill-current"
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            ><path
+              d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
+            ></path></svg
+          >
+        </a>
+        <ul class="p-2 bg-base-100">
+          <li><button data-set-theme="black" data-act-class="ACTIVECLASS">Dark</button></li>
+          <li><button data-set-theme="light" data-act-class="ACTIVECLASS">Light</button></li>
+          <li><button data-set-theme="night" data-act-class="ACTIVECLASS">abyss</button></li>
+          <li><button data-set-theme="coffee" data-act-class="ACTIVECLASS">coffee</button></li>
+          <li><button data-set-theme="dracula" data-act-class="ACTIVECLASS">dracula</button></li>
+          <li><button data-set-theme="halloween" data-act-class="ACTIVECLASS">halloween</button></li>
+          
+        </ul>
+        <!-- <select data-choose-theme>
+          <option value="">Default</option>
+          <option value="dark">Dark</option>
+          <option value="pink">Pink</option>
+        </select> -->
+      </li>
       <li tabindex="0">
         <a>
           Exams
@@ -48,7 +78,7 @@
           <hr class="border-gray-600"/>
           <li><a id="popup-button">motivation</a></li>
           <hr class="border-gray-600"/>
-          <li class="bg-cyan-200 text-black">
+          <li class="bg-cyan-200 text-black" >
             <a target="_blank" href="https://www.reddit.com/r/mht_cet/"
               >r/mht_cet</a
             >
@@ -58,6 +88,7 @@
       <li>
         <a href="../custom/countdown">Custom</a>
       </li>
+      
     </ul>
   </div>
 </div>

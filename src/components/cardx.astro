@@ -1,8 +1,8 @@
 <!-- credits where credit is due https://codepen.io/Hyperplexed/pen/MWQeYLW -->
-<div id="cards">
+<div id="cards" class="bg-base-200 ">
   <a>
-    <div class="card" onclick="window.location.href='../exams/jeemains';">
-      <div class="card-content">
+    <div class="card " onclick="window.location.href='../exams/jeemains';" >
+      <div class="card-content  bg-base-300">
         <div class="card-image rounded-lg">
           <img src="./1-min.webp" />
         </div>
@@ -10,7 +10,7 @@
           <div class="card-info">
             <div class="card-info-title">
               <a>Jee</a>
-              <h4>JEE? More like Just Endure Everything!</h4>
+              <h4 class="">JEE? More like Just Endure Everything!</h4>
             </div>
           </div>
         </div>
@@ -19,7 +19,7 @@
   </a>
   <a>
     <div class="card" onclick="window.location.href='../exams/neet';">
-      <div class="card-content">
+      <div class="card-content bg-base-300">
         <div class="card-image rounded-lg">
           <img src="./2-min.webp" />
         </div>
@@ -36,7 +36,7 @@
   </a>
   <a>
     <div class="card" onclick="window.location.href='../exams/bitsat';">
-      <div class="card-content">
+      <div class="card-content bg-base-300">
         <div class="card-image rounded-lg">
           <img src="./3-min.webp" />
         </div>
@@ -55,14 +55,14 @@
   </a>
 </div>
 <style>
-  :root {
+  /* :root {
     --bg-color: rgb(20, 20, 20);
     --card-color: rgb(23, 23, 23);
-  }
+  } */
 
   body {
     align-items: center;
-    background-color: var(--bg-color);
+    /* background-color: var(--bg-color); */
     display: flex;
     justify-content: center;
     margin: 0px;
@@ -129,7 +129,7 @@
   }
 
   .card > .card-content {
-    background-color: var(--card-color);
+    /* background-color: var(--card-color); */
     border-radius: inherit;
     display: flex;
     flex-direction: column;
@@ -148,14 +148,14 @@
   h4,
   a,
   span {
-    color: rgb(240, 240, 240);
+    /* color: rgb(240, 240, 240); */
     font-family: "Rubik", sans-serif;
     font-weight: 400;
     margin: 0px;
   }
 
   i {
-    color: rgb(240, 240, 240);
+    /* color: rgb(240, 240, 240); */
   }
 
   .card-image {
@@ -197,7 +197,7 @@
   }
 
   .card-info-title > h4 {
-    color: rgba(255, 255, 255, 0.5);
+    /* color: rgba(255, 255, 255, 0.5); */
     font-size: 0.85em;
     margin-top: 8px;
   }
